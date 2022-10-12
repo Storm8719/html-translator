@@ -1,41 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
+<head>
+    <meta charset="utf-8">
+    <title>Translate html without tags App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="dist/index_bundle.js"></script>
+</head>
 <body>
-
+<div id="language_input_box"></div>
 <div class="inputs-container">
-  <div class="input-box">
-    <label for="input_encrypt">Encrypt Html</label>
-    <textarea name="" id="input_encrypt" cols="60" rows="30"></textarea>
-    <button id="encrypt">Encrypt</button>
-  </div>
+    <div class="input-box">
+        <label for="input_encrypt">Html</label>
+        <textarea name="" id="input_encrypt" cols="60" rows="30"></textarea>
+        <button id="encrypt">Translate</button>
+    </div>
 
-  <div class="input-box">
-    <label for="output_encrypt">Encrypted Html</label>
-    <textarea name="" id="output_encrypt" cols="60" rows="30"></textarea>
-    <button id="decrypt">Decrypt</button>
-  </div>
+    <div class="input-box">
+        <label for="output_encrypt">Translated Html</label>
+        <textarea name="" id="output_encrypt" cols="60" rows="30"></textarea>
+    </div>
 
 </div>
-<p>Note: When you click "Decrypt" - you automatically copy the finished content from "Encrypt HTML" to the clipboard
+<p>Note: When you click "Translate" - you automatically copy the finished content from "Translated Html" to the clipboard
 </p>
 
 <style>
-  .inputs-container {
-    width: 100%;
-    display: flex;
-  }
+    .inputs-container {
+        width: 100%;
+        display: flex;
+    }
 
-  .input-box {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
+    .input-box {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
 </style>
 
+<script>
+    onDocumentReady();
+</script>
 
-
-<script src="test.js"></script>
 </body>
-
 </html>
